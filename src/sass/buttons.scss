@@ -1,0 +1,32 @@
+.buttons-pagination {
+    width: 90px;
+    height: 40px;
+    font-size: 17px;
+    background-color: rgba(62, 189, 248, 0.863);
+    box-shadow: 5px 5px 10px black;
+    border: 1px solid black;
+    color: rgb(248, 248, 248);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: font-size 0.2s linear;
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 15px;
+        height: 120px;
+        background-color: rgba(255, 251, 251, 0.5);
+        transition: transform .2s linear;
+        transform: rotate(-40deg) translate(-55px);
+    }
+    &:hover {
+        &::after {
+            transform: translate(70px) rotate(-40deg);
+        }
+        font-size: 24px;
+    }
+}

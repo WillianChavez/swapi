@@ -1,0 +1,51 @@
+@import 'buttons';
+@import 'animation';
+@import 'select';
+@font-face {
+    font-family: "Star wars";
+    src: url("../starjedi.TTF");
+}
+
+body {
+    background-image: url("../img/theme_body.jpg");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.pagination {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.title,
+.name-personaje {
+    font-family: "Star wars";
+    letter-spacing: 0.2em;
+    color: #000;
+    -webkit-text-stroke: .6px #fff;
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+.table-users {
+    text-align: center;
+    width: 35%;
+}
+
+.name-personaje {
+    font-size: 40px;
+    border-bottom: #fff 1px solid;
+}
+
+.table-row {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 20px;
+}

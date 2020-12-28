@@ -1,0 +1,92 @@
+.dropdown-select,
+label,
+.options {
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.dropdown-options,
+.options,
+.dropdown-select,
+.dropdown-options::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+}
+
+.dropdown {
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    position: relative;
+}
+
+.dropdown-select {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(#0000, 0.3);
+    height: 2rem;
+}
+
+.dropdown-options {
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgba(#0000, 0.3);
+    visibility: hidden;
+    box-shadow: 10px 16px 30px rgb(83, 83, 83);
+    position: absolute;
+    opacity: 0;
+    top: 2rem;
+    transition: opacity .5s, visibility .5s;
+    height: 350px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
+
+.dropdown-options::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(3, 3, 3);
+}
+
+.dropdown-options::-webkit-scrollbar-thumb {
+    background: linear-gradient(black, purple, blue, aqua);
+}
+
+.options {
+    background-color: #FFAA01;
+    height: 3rem;
+    margin-top: 10px;
+    border: 1px solid white;
+    transition: font-size .3s;
+    overflow: hidden;
+}
+
+.options:hover {
+    font-size: 1.5rem;
+    background-color: rgba(255, 145, 0, 0.897);
+}
+
+.dropdown:hover .dropdown-options {
+    visibility: visible;
+    opacity: 1;
+}
+
+.iconSelect {
+    transition: transform .5s;
+}
+
+.dropdown:hover .iconSelect {
+    transform: rotateX(180deg);
+}
+
+.radiobox {
+    display: none;
+}
+
+label {
+    width: 100%;
+    display: block;
+    height: 100%;
+    padding: 10px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/styles.css")
+    title Api practice Star Wars
+  body
+    h1.title APi PRACTiCE STAR WARS
+    .pagination
+      .buttons-pagination#btn_previous Prev
+      .buttons-pagination#btn_next Next
+      .dropdown
+        .dropdown-select
+            span#dropdownSelectContent Choose Option
+            i.iconSelect#iconSelect &#9660;
+
+        .dropdown-options
+    //-   .select
+    //-     select(id = 'select_character' class = 'select-character' )
+    //-       option(disabled selected) Choose character 
+
+    table(class = "table-users")
+      tr(class ='table-row')
+        td(COLSPAN="3" class= "name-personaje" id = "name_character") Name Personaje
+      tr.table-row
+        -const titles=['Gender','Hair color','Heigth']
+        each title in titles
+          td.title-characteristic= title
+      tr.table-row#table_row_characteristic
+        td#gender
+        td#hairColor
+        td#height
+
+
+    script(src="js/scripts-min.js")

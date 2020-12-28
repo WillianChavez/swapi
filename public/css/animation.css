@@ -1,0 +1,1 @@
+.animationFade{-webkit-animation:fade 1s linear;animation:fade 1s linear}@-webkit-keyframes fade{0%{opacity:1}50%{opacity:0}to{opacity:1}}@keyframes fade{0%{opacity:1}50%{opacity:0}to{opacity:1}}
